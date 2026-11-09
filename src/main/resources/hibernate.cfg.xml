@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration><session-factory>
+  <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+  <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+  <property name="hibernate.hbm2ddl.auto">update</property>
+  <property name="hibernate.show_sql">true</property>
+  <property name="hibernate.format_sql">true</property>
+  <property name="hibernate.jdbc.batch_size">25</property>
+  <!-- URL et identifiants injectés par HibernateUtil depuis l'environnement. -->
+  <mapping class="org.example.entities.Categorie"/>
+  <mapping class="org.example.entities.Produit"/>
+  <mapping class="org.example.entities.User"/>
+  <mapping class="org.example.entities.Client"/>
+  <mapping class="org.example.entities.Fournisseur"/>
+  <mapping class="org.example.entities.Commande"/>
+  <mapping class="org.example.entities.CommandeProduit"/>
+</session-factory></hibernate-configuration>
+

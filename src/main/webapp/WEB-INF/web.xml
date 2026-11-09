@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" version="4.0">
+  <display-name>Gestion commerciale</display-name>
+  <listener><listener-class>org.example.web.PersistenceListener</listener-class></listener>
+  <servlet><servlet-name>rapport</servlet-name><servlet-class>org.example.web.RapportVentesServlet</servlet-class></servlet>
+  <servlet-mapping><servlet-name>rapport</servlet-name><url-pattern>/rapports/ventes</url-pattern></servlet-mapping>
+  <welcome-file-list><welcome-file>index.html</welcome-file></welcome-file-list>
+</web-app>
+
